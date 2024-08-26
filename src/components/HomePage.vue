@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- ========== MAIN CONTENT ========== -->
     <main
       id="content"
       class="relative pt-24 max-w-3xl px-4 sm:px-6 lg:px-8 flex flex-col justify-center sm:items-center mx-auto size-full"
@@ -18,7 +17,6 @@
         <i class="fa-solid fa-arrow-right"></i>
       </button>
     </main>
-    <!-- ========== END MAIN CONTENT ========== -->
   </div>
 </template>
 
