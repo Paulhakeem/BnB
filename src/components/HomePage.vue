@@ -11,7 +11,7 @@
         </h2>
       </div>
       <button
-        class="align-middle select-none font-sans font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-blue to-gray text-white shadow-md shadow-gray-900/10 active:opacity-[0.85]"
+        class="align-middle select-none font-sans font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-blue to-gray text-white"
       >
         Book Now
         <i class="fa-solid fa-arrow-right"></i>

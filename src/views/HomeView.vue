@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="select-none">
     <div class="">
       <div class="">
         <video
@@ -19,11 +19,11 @@
     <!-- content -->
     <div class="pt-60 text-center">
       <div class="pb-8 relative">
-        <p class="text-gray font-medium text-xl tracking-tight">One bedrom</p>
-        <h3 class="text-3xl text-blue font-semibold">Apartment</h3>
+        <p class="text-gray font-medium text-xl tracking-tight capitalize">One bedrom</p>
+        <h3 class="text-2xl text-blue font-semibold">Apartment</h3>
       </div>
       <div
-        class="flex flex-wrap space-x-10 justify-center justify-items-center"
+        class="flex flex-col md:flex-row space-x-10 gap-10 justify-center"
       >
         <div class="cursor-pointer shadow-b-md">
           <div class="relative">
@@ -32,12 +32,17 @@
               alt=""
               class="w-80 h-60 object-cover rounded-md"
             />
-            <div class="absolute inset-0 bg-gray opacity-80 rounded-md"></div>
+           <div class="">
+             <div class="absolute inset-0 bg-gray opacity-80 rounded-md "></div>
             <div class="absolute inset-0 flex items-center justify-center">
-              <div class="bg-white"></div>
-              <p class="text-xl text-white">Seating Room</p>
-              <div class="bg-white"></div>
+              <div>
+                <p class="text-xl text-white capitalize">Seating Room</p>
+                <Rating/>
+              </div>
+              
+
             </div>
+           </div>
           </div>
         </div>
 
@@ -49,9 +54,11 @@
           />
           <div class="absolute inset-0 bg-gray opacity-80 rounded-md"></div>
           <div class="absolute inset-0 flex items-center justify-center">
-            <div class="bg-white"></div>
-            <p class="text-xl text-white">kitchen</p>
-            <div class="bg-white"></div>
+            <div>
+               <p class="text-xl text-white capitalize">kitchen</p>
+              <Rating/>
+            </div>
+           
           </div>
         </div>
 
@@ -63,19 +70,26 @@
           />
           <div class="absolute inset-0 bg-gray opacity-80 rounded-md"></div>
           <div class="absolute inset-0 flex items-center justify-center">
-            <div class="bg-white"></div>
-            <p class="text-xl text-white">bed Room</p>
-            <div class="bg-white"></div>
+            <div>
+              <p class="text-xl text-white capitalize">bed Room</p>
+              <Rating/>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- about -->
+    <div>
+      <About />
+    </div>
   </main>
 </template>
 
 <script setup>
+
 import Header from "../components/Header.vue";
 import HomePage from "../components/HomePage.vue";
+import About from "../components/About.vue";
+import Rating from "../components/Rating.vue";
 </script>

@@ -4,20 +4,9 @@ export default {
   theme: {
     colors: {
       "white": "#ffffff",
-      "blue": "#2563ea",
+      "blue": "#7091e6",
       "gray": "#9e9e9e"
-    },
-    screens: {
-      'sm': '640px',
-
-      'md': '750px',
-
-      'lg': '1024px',
-
-      'xl': '1280px',
-
-      '2xl': '1536px',
     }
-  },
+    },
   plugins: [],
 };
