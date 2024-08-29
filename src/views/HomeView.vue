@@ -84,6 +84,11 @@
     <div>
       <About />
     </div>
+
+
+
+    <!-- footer -->
+
   </main>
 </template>
 
@@ -92,4 +97,5 @@ import Header from "../components/Header.vue";
 import HomePage from "../components/HomePage.vue";
 import About from "../components/About.vue";
 import Rating from "../components/Rating.vue";
+
 </script>
