@@ -15,74 +15,48 @@
     <HomePage />
 
 
-    <div id="head2" class="pt-60 text-center">
-      <div class="pb-8 relative">
-        <p
-          id="text"
-          class="text-gray font-medium text-xl tracking-tight capitalize"
-        >
-          One bedrom
-        </p>
-        <h3 id="title" class="text-2xl text-blue font-semibold">Apartment</h3>
+    <div id="head2" class="pt-60">
+      <div class="pb-8">
+       <h5 class="text-2xl text-blue text-md font-medium capitalize">one Bedroom Apartment</h5>
       </div>
       <div
         id="images"
-        class="flex flex-col md:flex-row gap-10 justify-center"
+        class="flex flex-col md:flex-row gap-3 justify-center items-center"
       >
-        <div class="cursor-pointer shadow-b-md">
-          <div class="relative">
+        <div>
+          <div>
             <img
-              src="../assets/images/seatroom.jpg"
+              src="../assets/images/dispencer.jpg"
               alt=""
-              class="w-80 h-60 object-cover rounded-md"
+              class="w-[40em] h-[17em] object-cover rounded-tl-xl rounded-bl-xl"
             />
-            <div class="">
-              <div class="absolute inset-0 bg-gray opacity-80 rounded-md"></div>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div>
-                  <p class="text-xl text-white capitalize">Seating Room</p>
-                  <Rating />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
-        <div class="relative cursor-pointer text-pretty">
-          <img
-            src="../assets/images/kitchen.jpg"
-            alt=""
-            class="w-80 h-60 object-cover rounded-md"
-          />
-          <div class="absolute inset-0 bg-gray opacity-80 rounded-md"></div>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div>
-              <p class="text-xl text-white capitalize">kitchen</p>
-              <Rating />
-            </div>
+        <div class="relative cursor-pointer text-pretty space-y-3">
+          <div>
+            <img src="../assets/images/bedroom.jpg" alt="bedroom" class="w-64 h-[8em] object-cover">
+          </div>
+          <div>
+           <img src="../assets/images/tv.jpg" alt="tv" class="w-64 h-[8em] object-cover">
           </div>
         </div>
 
-        <div class="relative cursor-pointer text-pretty">
-          <img
-            src="../assets/images/bedroom.jpg"
-            alt=""
-            class="w-80 h-60 object-cover rounded-md"
-          />
-          <div class="absolute inset-0 bg-gray opacity-80 rounded-md"></div>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div>
-              <p class="text-xl text-white capitalize">bed Room</p>
-              <Rating />
-            </div>
+        <div class="relative cursor-pointer text-pretty space-y-3">
+          <div>
+            <img src="../assets/images/balcon.jpg" alt="bedroom" class="w-64 h-[8em] object-cover rounded-tr-xl">
+          </div>
+          <div>
+           <img src="../assets/images/kitchen.jpg" alt="bedroom" class="w-64 h-[8em] object-cover rounded-br-xl">
           </div>
         </div>
+
       </div>
     </div>
 
  
     <div>
-      <About />
+      <priceVue />
     </div>
 
 
@@ -95,7 +69,7 @@
 <script setup>
 import Header from "../components/Header.vue";
 import HomePage from "../components/HomePage.vue";
-import About from "../components/About.vue";
+import priceVue from "../components/PriceVue.vue";
 import Rating from "../components/Rating.vue";
 
 </script>
