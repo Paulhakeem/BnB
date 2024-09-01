@@ -66,24 +66,19 @@
               src="../assets/images/kitchen.jpg"
               alt="kitchen.jpg"
             />
-            <div
-              class="absolute inset-0 bg-gray-700 opacity-60 rounded-md"
-            ></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <button
-                class="border-2 border-white rounded-lg px-3 py-2 text-white cursor-pointer capitalize hover:bg-white hover:text-blue"
-              >
-                show all photos
-              </button>
-            </div>
+            <RouterLink to="/photo-tour">
+              <div
+                class="absolute inset-0 bg-gray-700 opacity-60 rounded-md"
+              ></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <button
+                  class="border-2 border-white rounded-lg px-3 py-2 text-white cursor-pointer capitalize hover:bg-white hover:text-blue"
+                >
+                  show all photos
+                </button>
+              </div>
+            </RouterLink>
           </div>
-          <!-- <div>
-            <img
-              src="../assets/images/kitchen.jpg"
-              alt="bedroom"
-              class="w-64 h-[8em] object-cover rounded-br-xl"
-            />
-          </div> -->
         </div>
       </div>
     </div>
@@ -103,3 +98,12 @@ import HomePage from "../components/HomePage.vue";
 import priceVue from "../components/PriceVue.vue";
 import ThePlace from "../components/ThePlace.vue";
 </script>
+
+<style>
+  @media (max-width: 768px) {
+  h5 {
+    padding-top: 2em;
+    color: #ffff;
+  }
+}
+</style>

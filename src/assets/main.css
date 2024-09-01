@@ -35,18 +35,4 @@ body {
   .logo {
     margin-left: 10px;
   }
-  #heading {
-    padding-top: 6em;
-  }
-  #text {
-    color: #ffff;
-  }
-  #title {
-    color: #ffff;
-  }
-  #images {
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
 }

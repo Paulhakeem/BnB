@@ -10,18 +10,30 @@
           <span class="">My Holiday Deals</span>
         </h2>
       </div>
-     <a href="mailto:myholidaydeals21@gmail.com">
-       <button 
-        class="align-middle select-none font-sans font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-blue to-gray text-white sm:text-left"
-      >
-        Book Now
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
-     </a>
+      <a href=" mailto:myholidaydeals21@gmail.com">
+        <div
+          class="font-sans font-bold uppercase text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-blue to-gray text-white text-center"
+        >
+          Book Now
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
     </main>
   </div>
 </template>
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style>
+@media (max-width: 768px) {
+  #heading {
+    padding-top: 6em;
+  }
+}
+
+@media (max-width: 640px) {
+  button {
+    width: 70%;
+  }
+}
+</style>
