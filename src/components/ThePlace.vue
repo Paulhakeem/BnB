@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <AmenitiesModal>
+    <AmenitiesModal :showModal="showModal" @close-modal="toggleModal">
       <div>
         <div class="text-start">
           <p class="text-black text-xl font-semibold">What this place offers</p>
