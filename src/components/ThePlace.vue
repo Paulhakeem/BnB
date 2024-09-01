@@ -4,9 +4,10 @@
       <div class="">
         <h4 class="text-blue text-xl font-semibold">What this place offers</h4>
         <button
+          @click="toggleModal"
           class="inline-flex items-center px-4 py-2 bg-blue mt-12 text-white text-sm font-medium capitalize rounded-md"
         >
-          <i @click="showModal" class="fa-solid fa-circle-info pr-2"></i>
+          <i class="fa-solid fa-circle-info pr-2"></i>
           show all 41 amenities
         </button>
       </div>
@@ -99,9 +100,11 @@
 <script setup>
 import { ref } from "vue";
 import AmenitiesModal from "../components/AmenitiesModal.vue";
+
 const modalActive = ref(null);
+
 const toggleModal = () => {
-  showModal.value = !showModal.value;
+  modalActive.value = !modalActive.value;
 };
 </script>
 
