@@ -10,12 +10,14 @@
           <span class="">My Holiday Deals</span>
         </h2>
       </div>
-      <button 
+     <a href="mailto:myholidaydeals21@gmail.com">
+       <button 
         class="align-middle select-none font-sans font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-blue to-gray text-white sm:text-left"
       >
         Book Now
         <i class="fa-solid fa-arrow-right"></i>
       </button>
+     </a>
     </main>
   </div>
 </template>
