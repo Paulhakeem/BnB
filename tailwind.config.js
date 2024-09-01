@@ -5,7 +5,8 @@ export default {
     colors: {
       "white": "#ffffff",
       "blue": "#7091e6",
-      "gray": "#9e9e9e"
+      "gray": "#9e9e9e",
+      "black": "#183052"
     }
     },
   plugins: [],
