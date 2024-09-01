@@ -59,13 +59,31 @@
               class="w-64 h-[8em] object-cover rounded-tr-xl"
             />
           </div>
-          <div>
+
+          <div class="relative max-w-xl mx-auto mt-20">
+            <img
+              class="w-64 h-[8em] object-cover rounded-tr-xl"
+              src="../assets/images/kitchen.jpg"
+              alt="kitchen.jpg"
+            />
+            <div
+              class="absolute inset-0 bg-gray-700 opacity-60 rounded-md"
+            ></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button
+                class="border-2 border-white rounded-lg px-3 py-2 text-white cursor-pointer capitalize hover:bg-white hover:text-blue"
+              >
+                show all photos
+              </button>
+            </div>
+          </div>
+          <!-- <div>
             <img
               src="../assets/images/kitchen.jpg"
               alt="bedroom"
               class="w-64 h-[8em] object-cover rounded-br-xl"
             />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
