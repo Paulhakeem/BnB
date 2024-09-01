@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <AmenitiesModal :showModal="showModal" @close-modal="toggleModal">
+    <AmenitiesModal :modalActive="modalActive" @close-modal="toggleModal">
       <div>
         <div class="text-start">
           <p class="text-black text-xl font-semibold">What this place offers</p>
@@ -99,7 +99,7 @@
 <script setup>
 import { ref } from "vue";
 import AmenitiesModal from "../components/AmenitiesModal.vue";
-const showModal = ref(null);
+const modalActive = ref(null);
 const toggleModal = () => {
   showModal.value = !showModal.value;
 };
