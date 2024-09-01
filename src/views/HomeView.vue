@@ -57,6 +57,7 @@
  
     <div>
       <priceVue />
+      <ThePlace/>
     </div>
 
 
@@ -70,6 +71,6 @@
 import Header from "../components/Header.vue";
 import HomePage from "../components/HomePage.vue";
 import priceVue from "../components/PriceVue.vue";
-import Rating from "../components/Rating.vue";
+import ThePlace from "../components/ThePlace.vue";
 
 </script>
