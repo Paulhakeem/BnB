@@ -2,6 +2,12 @@
   <div class="bg-white mt-12 p-6 grid grid-cols-2 justify-end gap-12">
     <div class="">
       <h4 class="text-blue text-xl font-semibold">What this place offers</h4>
+      <button
+        class="inline-flex items-center px-4 py-2 bg-blue mt-12 text-white text-sm font-medium capitalize rounded-md"
+      >
+        <i class="fa-solid fa-circle-info pr-2"></i>
+        show all 41 amenities
+      </button>
     </div>
 
     <div class="grid grid-cols-2 max-w-md gap-6">
