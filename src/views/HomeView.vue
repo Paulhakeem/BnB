@@ -74,6 +74,7 @@
                 <button
                   class="border-2 border-white rounded-lg px-3 py-2 text-white cursor-pointer capitalize hover:bg-white hover:text-blue"
                 >
+                  <i class="fa-solid fa-photo-film"></i>
                   show all photos
                 </button>
               </div>
@@ -100,7 +101,7 @@ import ThePlace from "../components/ThePlace.vue";
 </script>
 
 <style>
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   h5 {
     padding-top: 2em;
     color: #ffff;
