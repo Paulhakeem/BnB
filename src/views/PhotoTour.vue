@@ -104,6 +104,46 @@
         />
       </div>
     </div>
+
+    <!-- Exterior -->
+    <div class="flex flex-wrap gap-2 justify-evenly pt-14">
+      <div class="text-xl text-black text-start">
+        <h3 class="font-semibold capitalize">Exterior</h3>
+      </div>
+      <div class="flex gap-2 flex-wrap">
+        <img
+          src="../assets/images/balcon.jpg"
+          alt="Exterior"
+          class="w-72 h-96 object-cover"
+        />
+
+        <img
+          src="../assets/images/outside.jpg"
+          alt="Exterior"
+          class="w-72 h-96 object-cover"
+        />
+      </div>
+    </div>
+
+<!-- Additional photos -->
+       <div class="flex flex-wrap gap-2 justify-evenly pt-14">
+      <div class="text-xl text-black text-start">
+        <h3 class="font-semibold capitalize">Additional photos</h3>
+      </div>
+      <div class="flex gap-2 flex-wrap">
+        <img
+          src="../assets/images/lights.jpg"
+          alt="Additional photos"
+          class="w-72 h-96 object-cover"
+        />
+
+        <img
+          src="../assets/images/tv.jpg"
+          alt="Additional photos"
+          class="w-72 h-96 object-cover"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
