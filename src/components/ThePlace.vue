@@ -12,7 +12,7 @@
         </button>
       </div>
 
-      <div class="grid grid-cols-2 max-w-md gap-6">
+      <div class="grid grid-cols-2 max-w-md gap-6 item place-content-center justify-center flex-wrap">
         <div class="flex gap-3 items-center">
           <i class="fa-solid fa-binoculars text-blue"></i>
           <p>City skyline view</p>
