@@ -91,17 +91,19 @@
 
     <!-- footer -->
     <div class="pt-10">
-      <Footer/>
+      <Contact />
+      <Footer />
     </div>
   </main>
 </template>
 
 <script setup>
-import Footer from "../components/Footer.vue";
 import Header from "../components/Header.vue";
 import HomePage from "../components/HomePage.vue";
 import priceVue from "../components/PriceVue.vue";
 import ThePlace from "../components/ThePlace.vue";
+import Footer from "../components/Footer.vue";
+import Contact from "../components/Contact.vue";
 </script>
 
 <style>
