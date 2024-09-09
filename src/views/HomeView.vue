@@ -90,10 +90,14 @@
     </div>
 
     <!-- footer -->
+    <div class="pt-10">
+      <Footer/>
+    </div>
   </main>
 </template>
 
 <script setup>
+import Footer from "../components/Footer.vue";
 import Header from "../components/Header.vue";
 import HomePage from "../components/HomePage.vue";
 import priceVue from "../components/PriceVue.vue";

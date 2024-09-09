@@ -1,10 +1,10 @@
 <template>
-  <main class="mt-24 bg-blue w-full p-6">
-    <div class="flex justify-between gap-6">
+  <main class="mt-24 bg-blue w-full p-4 rounded-sm">
+    <div class="flex justify-between items-center gap-6">
       <div>
         <h3 class="text-white text-md font-semibold">One Bedroom Apartment</h3>
         <p class="text-sm text-white">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, hic?
+          Kick back and relax in this calm, stylish space.
         </p>
       </div>
 

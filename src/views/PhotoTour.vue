@@ -1,5 +1,10 @@
 <template>
   <div class="container pt-6">
+    <RouterLink to="/">
+      <button class="text-left">
+        <i class="fa-solid fa-chevron-left text-xl"></i>
+      </button>
+    </RouterLink>
     <h1 class="text-2xl font-semibold text-black text-center">Photo Tour</h1>
 
     <div class="flex flex-wrap gap-2 justify-evenly pt-14">
@@ -125,10 +130,10 @@
       </div>
     </div>
 
-<!-- Additional photos -->
-       <div class="flex flex-wrap gap-2 justify-evenly pt-14">
+    <!-- Additional photos -->
+    <div class="flex flex-wrap gap-2 justify-evenly pt-14">
       <div class="text-xl text-black text-start">
-        <h3 class="font-semibold capitalize">Additional photos</h3>
+        <h3 class="font-semibold capitalize">Additional <br>photos</h3>
       </div>
       <div class="flex gap-2 flex-wrap">
         <img
@@ -144,9 +149,15 @@
         />
       </div>
     </div>
+
+    <div class="pt-10">
+      <Footer />
+    </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Footer from "../components/Footer.vue";
+</script>
 
 <style lang="scss" scoped></style>
