@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="bg-white mt-12 p-6 grid grid-cols-2 justify-end gap-12">
+    <div class="bg-white mt-12 p-6 flex flex-wrap justify-evenly gap-12">
       <div class="">
         <h4 class="text-blue text-xl font-semibold">What this place offers</h4>
         <button
