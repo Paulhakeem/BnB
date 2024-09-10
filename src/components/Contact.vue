@@ -4,23 +4,24 @@
   >
     <div class="flex flex-wrap gap-8 justify-evenly items-center">
       <div class="">
-        <div style="width: 100%">
-          <iframe
-            width="500"
-            height="400"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            allowfullscreen
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Mombasa,%20Bamburi+(My%20Holiday%20Deals)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            ><a href="https://www.gps.ie/">gps trackers</a></iframe
-          >
-        </div>
+        <iframe
+          width="500"
+          height="400"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          allowfullscreen
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Dimash%20Apartments+(My%20Holiday%20Deals)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ><a href="https://www.gps.ie/">gps tracker sport</a></iframe
+        >
       </div>
 
       <div class="w-96">
-        <form action="#" class="w-[100%] border border-blue p-6 bg-white bg-opacity-80 my-3">
+        <form
+          action="#"
+          class="w-[100%] border border-blue p-6 bg-white bg-opacity-80 my-3"
+        >
           <h2 class="text-2xl pb-3 font-semibold text-blue">Book Now</h2>
           <div>
             <div class="flex flex-col mb-3">
