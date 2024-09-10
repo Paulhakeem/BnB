@@ -67,4 +67,11 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style>
+@media only screen and (max-width: 768px) {
+iframe{
+ width: 100%;
+ padding-top: 2em;
+}
+}
+</style>

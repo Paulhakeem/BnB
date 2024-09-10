@@ -11,12 +11,13 @@
         </h2>
       </div>
       <a href=" mailto:myholidaydeals21@gmail.com">
-        <div
+        <button
+         id="button"
           class="font-sans font-bold uppercase text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-blue to-gray text-white text-center"
         >
           Book Now
           <i class="fa-solid fa-arrow-right"></i>
-        </div>
+        </button>
       </a>
     </main>
   </div>
@@ -25,15 +26,18 @@
 <script setup></script>
 
 <style>
-@media (max-width: 768px) {
-  #heading {
-    padding-top: 6em;
-  }
+@media only screen and (max-width: 768px) {
+#button{
+  width: 50%;
+  margin: auto;
+}
+#heading{
+  padding-top: 8em;
 }
 
-@media (max-width: 640px) {
-  button {
-    width: 70%;
-  }
+#heading h2{
+ font-size: 2em;
+ line-height: 1em;
+}
 }
 </style>
