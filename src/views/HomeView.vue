@@ -89,6 +89,26 @@
       <ThePlace />
     </div>
 
+    <!--  -->
+    <div
+      class="flex flex-wrap justify-evenly bg-white h-auto w-full rounded-sm mt-6"
+    >
+      <div class="text-center p-2">
+        <i class="fa-solid fa-envelope text-2xl text-blue"></i>
+        <p class="font-medium">
+          Email:
+          <a href="mailto:myholidaydeals21@gmail.com" class="font-normal"
+            >myholidaydeals21@gmail.com</a
+          >
+        </p>
+      </div>
+      <div class="text-center p-2">
+        <i class="fa-solid fa-phone-volume text-2xl text-blue"></i>
+        <p class="font-medium">
+          Call: <a href="tel:+254 769 716705" class="font-normal">+254 769 716705</a>
+        </p>
+      </div>
+    </div>
     <!-- footer -->
     <div class="pt-10">
       <Contact />
