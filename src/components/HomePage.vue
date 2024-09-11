@@ -12,7 +12,7 @@
       </div>
       <a href=" mailto:myholidaydeals21@gmail.com">
         <button
-         id="button"
+          id="button"
           class="font-sans font-bold uppercase text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-blue to-gray text-white text-center"
         >
           Book Now
@@ -27,33 +27,50 @@
 
 <style>
 @media only screen and (max-width: 768px) {
-#button{
-  width: 50%;
-  margin: auto;
-}
-#heading{
-  padding-top: 8em;
-}
+  #button {
+    width: 50%;
+    margin: auto;
+  }
+  #heading {
+    padding-top: 8em;
+  }
 
-#heading h2{
- font-size: 2em;
- line-height: 1em;
-}
+  #heading h2 {
+    font-size: 2em;
+    line-height: 1em;
+  }
 }
 @media only screen and (min-width: 600px) {
-#button{
-  width: 100%;
-}
-#heading{
-  padding-top: 2em;
+  #button {
+    width: 100%;
+  }
+  #heading {
+    padding-top: 2em;
+  }
+
+  #heading h2 {
+    font-size: 6em;
+    line-height: 1em;
+  }
+  #heading h5 {
+    font-size: 2em;
+  }
 }
 
-#heading h2{
- font-size: 6em;
- line-height: 1em;
-}
-#heading h5{
-  font-size: 2em;
-}
+@media only screen and (min-width: 992px) {
+  #button {
+    width: 100%;
+  }
+  #heading {
+    padding-top: 1em;
+  }
+
+  #heading h2 {
+    font-size: 4em;
+    line-height: 1em;
+  }
+  #heading h5 {
+    font-size: 1em;
+  }
 }
 </style>
