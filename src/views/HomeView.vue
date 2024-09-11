@@ -105,7 +105,8 @@
       <div class="text-center p-2">
         <i class="fa-solid fa-phone-volume text-2xl text-blue"></i>
         <p class="font-medium">
-          Call: <a href="tel:+254 769 716705" class="font-normal">+254 769 716705</a>
+          Call:
+          <a href="tel:+254 769 716705" class="font-normal">+254 769 716705</a>
         </p>
       </div>
     </div>
@@ -127,12 +128,18 @@ import Contact from "../components/Contact.vue";
 </script>
 
 <style>
-@media only screen and (max-width: 700px) {
- #head2 {
-  padding-top: 14em;
+@media only screen and (max-width: 600px) {
+  #head2 {
+    padding-top: 14em;
   }
 }
-@media screen and (max-width: 1024px) {
-
+@media only screen and (min-width: 600px) {
+  #head2 {
+    padding-top: 20em;
+   
+  }
+  #head2 h5{
+     color: #fff;
+  }
 }
 </style>

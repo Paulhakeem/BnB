@@ -74,4 +74,9 @@ iframe{
  padding-top: 2em;
 }
 }
+@media only screen and (min-width: 600px) {
+iframe{
+ padding-top: 1.5em;
+}
+}
 </style>

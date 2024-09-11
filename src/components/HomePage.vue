@@ -40,4 +40,20 @@
  line-height: 1em;
 }
 }
+@media only screen and (min-width: 600px) {
+#button{
+  width: 100%;
+}
+#heading{
+  padding-top: 2em;
+}
+
+#heading h2{
+ font-size: 6em;
+ line-height: 1em;
+}
+#heading h5{
+  font-size: 2em;
+}
+}
 </style>
