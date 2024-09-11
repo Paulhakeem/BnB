@@ -127,9 +127,12 @@ import Contact from "../components/Contact.vue";
 </script>
 
 <style>
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
  #head2 {
   padding-top: 14em;
   }
+}
+@media screen and (max-width: 1024px) {
+
 }
 </style>
