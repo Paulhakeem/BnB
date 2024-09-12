@@ -30,6 +30,8 @@
   #button {
     width: 50%;
     margin: auto;
+    justify-content: center;
+    text-align: center;
   }
   #heading {
     padding-top: 8em;

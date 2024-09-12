@@ -16,7 +16,9 @@
 
     <div id="head2" class="pt-60">
       <div class="pb-8">
-        <h5 class="text-2xl text-blue text-md font-medium capitalize dark:text-white">
+        <h5
+          class="text-2xl text-blue text-md font-medium capitalize dark:text-white"
+        >
           one Bedroom Apartment
         </h5>
       </div>
@@ -131,7 +133,10 @@ import Contact from "../components/Contact.vue";
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #head2 {
-    padding-top: 14em;
+    padding-top: 22em;
+
+    margin-left: 6px;
+    margin-right: 6px;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -141,6 +146,7 @@ import Contact from "../components/Contact.vue";
   }
   #head2 h5 {
     color: #fff;
+    padding-left: 1em
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -148,13 +154,12 @@ import Contact from "../components/Contact.vue";
   #head2 {
     padding-top: 14em;
   }
-   #head2 h5 {
+  #head2 h5 {
     color: #0065b3;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
 }
 </style>

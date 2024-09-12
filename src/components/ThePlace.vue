@@ -51,7 +51,7 @@
     </div>
 
     <AmenitiesModal :modalActive="modalActive" @close-modal="toggleModal">
-      <div>
+      <div class="">
         <div class="text-start">
           <p class="text-black text-xl font-semibold">What this place offers</p>
         </div>

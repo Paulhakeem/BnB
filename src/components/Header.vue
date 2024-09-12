@@ -1,6 +1,9 @@
 <template>
   <header>
-    <nav id="nav" class="bg-white lg:px-6 py-2.5 dark:bg-gray-800 sm:w-full md:w-full">
+    <nav
+      id="nav"
+      class="bg-white lg:px-6 py-2.5 dark:bg-gray-800 sm:w-full md:w-full"
+    >
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
       >
@@ -25,7 +28,7 @@
             aria-expanded="false"
           >
             <span class="sr-only">Open main menu</span>
-          <i class="fa-solid fa-bars text-2xl"></i>
+            <i class="fa-solid fa-bars text-2xl"></i>
           </button>
         </div>
         <div
@@ -51,11 +54,12 @@
               >
             </li>
             <li>
-              <a
-                href="#"
+              <router-link
+                to="/tour"
                 class="block py-2 pr-4 pl-3 text-gray-700 lg:hover:text-blue lg:p-0 dark:text-gray lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray"
-                >Services</a
               >
+                Tours
+              </router-link>
             </li>
             <li>
               <a
@@ -75,9 +79,8 @@
 
 <style>
 @media only screen and (min-width: 600px) {
-  img{
+  img {
     margin-left: 0.7em;
   }
-  }
-
+}
 </style>
