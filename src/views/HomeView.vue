@@ -133,7 +133,7 @@ import Contact from "../components/Contact.vue";
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #head2 {
-    padding-top: 22em;
+    padding-top: 20em;
 
     margin-left: 6px;
     margin-right: 6px;
@@ -161,5 +161,8 @@ import Contact from "../components/Contact.vue";
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+   #head2 h5 {
+    color: #fff;
+  }
 }
 </style>

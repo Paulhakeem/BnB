@@ -10,9 +10,8 @@
           <span class="">My Holiday Deals</span>
         </h2>
       </div>
-      <a href=" mailto:myholidaydeals21@gmail.com">
+      <a href=" mailto:myholidaydeals21@gmail.com" id="button">
         <button
-          id="button"
           class="font-sans font-bold uppercase text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-blue to-gray text-white text-center"
         >
           Book Now
