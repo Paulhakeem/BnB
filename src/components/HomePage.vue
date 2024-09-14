@@ -56,6 +56,12 @@
   #heading h5 {
     font-size: 2em;
   }
+   #button {
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 992px) {

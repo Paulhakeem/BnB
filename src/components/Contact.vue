@@ -19,7 +19,7 @@
 
       <div class="w-96">
         <form
-          action="#"
+          @submit.prevent="sendEmail"
           class="w-[100%] border border-blue p-6 bg-white bg-opacity-80 my-3"
         >
           <h2 class="text-2xl pb-3 font-semibold text-blue">Book Now</h2>
@@ -27,8 +27,8 @@
             <div class="flex flex-col mb-3">
               <label for="name">Name</label>
               <input
+                v-model="name"
                 type="text"
-                id="name"
                 class="px-3 py-2 bg-gray border border-gray focus:border-blue focus:outline-none focus:bg-gray focus:text-white"
                 autocomplete="off"
               />
@@ -36,8 +36,8 @@
             <div class="flex flex-col mb-3">
               <label for="email">Email</label>
               <input
-                type="text"
-                id="email"
+                v-model="email"
+                type="email"
                 class="px-3 py-2 bg-gray border border-gray focus:border-blue focus:outline-none focus:bg-gray focus:text-white"
                 autocomplete="off"
               />
@@ -45,8 +45,8 @@
             <div class="flex flex-col mb-3">
               <label for="message">Message</label>
               <textarea
+                v-model="message"
                 rows="4"
-                id="message"
                 class="px-3 py-2 bg-gray border border-gray focus:border-blue focus:outline-none focus:bg-gray focus:text-white"
               ></textarea>
             </div>
@@ -62,22 +62,44 @@
         </form>
       </div>
     </div>
-    
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import { Resend } from "resend";
+
+const name = ref("");
+const email = ref("");
+const message = ref("");
+
+const resend = new Resend("re_AWfXFTfp_DL3q1CLSAWMP4YM1FP3PHhxJ");
+
+const sendEmail = async () => {
+  try {
+    const data = await resend.emails.send({
+      from: "Acme <onboarding@resend.dev>",
+      to: ["paulnyamawi18@gmail.com"],
+      subject: "Hello world",
+      html: "<strong>It works!</strong>",
+    });
+    console.log(data);
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+</script>
 
 <style>
 @media only screen and (max-width: 768px) {
-iframe{
- width: 100%;
- padding-top: 2em;
-}
+  iframe {
+    width: 100%;
+    padding-top: 2em;
+  }
 }
 @media only screen and (min-width: 600px) {
-iframe{
- padding-top: 1.5em;
-}
+  iframe {
+    padding-top: 1.5em;
+  }
 }
 </style>
