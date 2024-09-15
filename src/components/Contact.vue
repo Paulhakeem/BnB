@@ -20,6 +20,7 @@
       <div class="w-96">
         <form
           @submit.prevent="sendEmail"
+          method="POST"
           class="w-[100%] border border-blue p-6 bg-white bg-opacity-80 my-3"
         >
           <h2 class="text-2xl pb-3 font-semibold text-blue">Book Now</h2>
@@ -67,26 +68,16 @@
 
 <script setup>
 import { ref } from "vue";
-import { Resend } from "resend";
+import emailjs from '@emailjs/browser';
 
 const name = ref("");
 const email = ref("");
 const message = ref("");
 
-const resend = new Resend("re_AWfXFTfp_DL3q1CLSAWMP4YM1FP3PHhxJ");
-
 const sendEmail = async () => {
-  try {
-    const data = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["paulnyamawi18@gmail.com"],
-      subject: "Hello world",
-      html: "<strong>It works!</strong>",
-    });
-    console.log(data);
-  } catch (error) {
-    console.log(error.message);
-  }
+  emailjs.sendForm("service_gckx538", "template_xcyanxz", this.$refs.form, {
+    publicKey: "nOzn7BP8HaOyWlFg1",
+  });
 };
 </script>
 
