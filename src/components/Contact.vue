@@ -19,6 +19,7 @@
 
       <div class="w-96">
         <form
+          ref="form"
           @submit.prevent="sendEmail"
           method="POST"
           class="w-[100%] border border-blue p-6 bg-white bg-opacity-80 my-3"
@@ -28,7 +29,7 @@
             <div class="flex flex-col mb-3">
               <label for="name">Name</label>
               <input
-                v-model="name"
+                v-model="formDetails.name"
                 type="text"
                 class="px-3 py-2 bg-gray border border-gray focus:border-blue focus:outline-none focus:bg-gray focus:text-white"
                 autocomplete="off"
@@ -37,7 +38,7 @@
             <div class="flex flex-col mb-3">
               <label for="email">Email</label>
               <input
-                v-model="email"
+                v-model="formDetails.email"
                 type="email"
                 class="px-3 py-2 bg-gray border border-gray focus:border-blue focus:outline-none focus:bg-gray focus:text-white"
                 autocomplete="off"
@@ -46,7 +47,7 @@
             <div class="flex flex-col mb-3">
               <label for="message">Message</label>
               <textarea
-                v-model="message"
+                v-model="formDetails.message"
                 rows="4"
                 class="px-3 py-2 bg-gray border border-gray focus:border-blue focus:outline-none focus:bg-gray focus:text-white"
               ></textarea>
@@ -68,16 +69,32 @@
 
 <script setup>
 import { ref } from "vue";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+const { VITE_SERVICE_ID, VITE_EMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
 
-const name = ref("");
-const email = ref("");
-const message = ref("");
+const formDetails = ref({
+  name: "",
+  email: "",
+  message: "",
+});
 
-const sendEmail = async () => {
-  emailjs.sendForm("service_gckx538", "template_xcyanxz", this.$refs.form, {
-    publicKey: "nOzn7BP8HaOyWlFg1",
-  });
+const serviceID = ref(VITE_SERVICE_ID);
+const templateID = ref(VITE_EMPLATE_ID);
+const publicID = ref(VITE_PUBLIC_KEY);
+
+const sendEmail = async (e) => {
+  emailjs
+    .sendForm(serviceID.value, templateID.value, e.target, publicID.value, {
+      name: formDetails.name,
+      email: formDetails.email,
+      message: formDetails.message,
+    })
+    .then((result) => {
+      console.log("email sent");
+    })
+    .catch((err) => {
+      console.log(err.message);
+    });
 };
 </script>
 
