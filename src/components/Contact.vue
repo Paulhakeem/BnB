@@ -69,8 +69,9 @@
 
 <script setup>
 import { ref } from "vue";
-import emailjs from "@emailjs/browser";
-const { VITE_SERVICE_ID, VITE_EMPLATE_ID, VITE_PUBLIC_KEY } = import.meta.env;
+import { Resend } from 'resend';
+
+const { VITE_API_KEY } = import.meta.env;
 
 const formDetails = ref({
   name: "",
@@ -78,23 +79,25 @@ const formDetails = ref({
   message: "",
 });
 
-const serviceID = ref(VITE_SERVICE_ID);
-const templateID = ref(VITE_EMPLATE_ID);
-const publicID = ref(VITE_PUBLIC_KEY);
+const myAPI = ref(VITE_API_KEY);
 
-const sendEmail = async (e) => {
-  emailjs
-    .sendForm(serviceID.value, templateID.value, e.target, publicID.value, {
-      name: formDetails.name,
-      email: formDetails.email,
-      message: formDetails.message,
-    })
-    .then((result) => {
-      console.log("email sent");
-    })
-    .catch((err) => {
-      console.log(err.message);
-    });
+const resend = new Resend(myAPI)
+
+
+
+const sendEmail = async () => {
+  const data = await resend.emails.send({
+    from: 'Acme <onboarding@resend.dev>',
+    to: ['paulnyamawi18@gmail.com'],
+    subject: 'Hello World',
+    html: '<strong>It works!</strong>',
+  });
+
+  if (data) {
+    return console.log(data);
+    
+  }
+
 };
 </script>
 
