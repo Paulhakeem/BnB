@@ -1,10 +1,7 @@
 <template>
-  <div class="container pt-6">
-    <RouterLink to="/">
-      <button class="text-left">
-        <i class="fa-solid fa-chevron-left text-xl"></i>
-      </button>
-    </RouterLink>
+  <main>
+    <Sidebar/>
+  <div class="pt-6">
     <h1
       data-aos="zoom-in"
       class="text-2xl font-semibold text-black text-center"
@@ -186,8 +183,10 @@
 
     <Footer />
   </div>
+  </main>
 </template>
 
 <script setup>
 import Footer from "../components/Footer.vue";
+import Sidebar from "../components/Sidebar.vue";
 </script>

@@ -18,9 +18,9 @@
           {{ info.location }}
         </div>
 
-        <div>
+       <RouterLink to="/book-now">
           <Button class="w-24 bg-[#3178c6]">Book Now</Button>
-        </div>
+       </RouterLink>
       </div>
     </div>
   </main>

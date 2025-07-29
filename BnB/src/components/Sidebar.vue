@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section class="sticky top-0 z-50">
       <div class="flex lg:hidden justify-between items-center p-4">
         <button
           @click="openMenu"
@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <div class="hidden lg:flex w-[300x] flex-col justify-between sticky z-50">
+    <div class="hidden lg:flex w-[300x] flex-col justify-between z-50">
       <Header />
     </div>
   </section>

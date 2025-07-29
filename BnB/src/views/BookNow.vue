@@ -4,13 +4,13 @@
     <div class="grid items-start lg:flex">
       <sidebar />
 
-      <div class="p-8 w-full ">
+      <div class="p-8 w-full container">
         <h1 class="text-4xl font-medium mb-4 text-[#3178c6]">Book Now</h1>
         <p class="text-gray-600 mb-6">
           Please select your booking options below.
         </p>
 
-        <div class="space-y-10 mb-6">
+        <div class="space-y-10 mb-6 ">
           <Button class="flex gap-2 items-center bg-[#3178c6]">
             <Icon icon="si:add-circle-fill" />
             BnB</Button
