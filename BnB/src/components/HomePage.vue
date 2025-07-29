@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router';
+
+</script>
+
 <template>
   <div>
     <main
@@ -11,12 +16,15 @@
         </h2>
       </div>
       <a href=" mailto:myholidaydeals21@gmail.com" id="button">
+        <RouterLink
+          to="/book-now">
         <button
           class="font-sans font-bold uppercase text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-[#3178c6] to-gray text-white text-center"
         >
           Book Now
           <i class="fa-solid fa-arrow-right"></i>
         </button>
+        </RouterLink>
       </a>
     </main>
   </div>
