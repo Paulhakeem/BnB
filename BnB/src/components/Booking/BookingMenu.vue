@@ -1,6 +1,6 @@
 <template>
   <!-- Small Device -->
-  <div class="bg-[#3178c6] z-50 flex justify-between items-center">
+  <div class="bg-[#3178c6] z-50 flex justify-between items-center sticky top-0 ">
     <div v-for="(item, index) in icon" :key="index">
       <div
         class="flex lg:hidden z-50 items-center justify-between p-4 w-full h-full"

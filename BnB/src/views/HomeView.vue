@@ -97,13 +97,13 @@
       </div>
     </div>
 
-    <div>
+    <section>
       <priceVue />
       <ThePlace />
-    </div>
+    </section>
 
     <!--  -->
-    <div
+    <section
       class="flex flex-wrap justify-evenly h-auto w-full mt-6"
     >
       <div data-aos="fade-up" class="text-center p-2">
@@ -122,7 +122,7 @@
           <a href="tel:+254 769 716705" class="font-normal">+254 769 716705</a>
         </p>
       </div>
-    </div>
+    </section>
     <!-- footer -->
     <div class="pt-10">
       <Contact />

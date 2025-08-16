@@ -8,7 +8,7 @@
             :to="item.path"
             class="flex items-center gap-2 p-2 rounded hover:bg-gray-900 transition cursor-pointer"
           >
-            <Icon size="25" :icon="item.icon" class="text-gray-300" />
+            <Icon size="25" :icon="item.icon" class="text-gray-300 text-2xl" />
             <span class="text-gray-200">{{ item.name }}</span>
           </RouterLink>
         </div>
@@ -29,7 +29,12 @@ const items = ref([
   {
     name: "Bookings",
     path: "/Bookings",
-    icon: "healthicons:low-income-level",
+    icon: "fluent:book-add-24-filled",
+  },
+  {
+    name: "Insights",
+    path: "/insights",
+    icon: "mdi:graph-box",
   },
 ]);
 </script>

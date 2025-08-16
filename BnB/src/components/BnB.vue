@@ -31,10 +31,6 @@
           class="outline-none border border-gray-[#3178c6] rounded-md p-1.5"
         />
       </div>
-      <div class="flex flex-col mb-4">
-        <span class="text-gray-600">Total Price</span>
-        <p class="text-xl font-semibold text-[#3178c6]">Ksh6000</p>
-      </div>
     </div>
     <a
       class="text-md py-1.5 px-2.5 inline-flex items-center gap-x-1.5 text-gray-800 bg-gray-100 hover:text-[#3178c6] rounded-lg focus:outline-hidden focus:text-[#3178c6]"
