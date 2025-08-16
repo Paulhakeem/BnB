@@ -10,7 +10,7 @@
           Please select your booking options below.
         </p>
 
-       <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       <div class="flex-wrap lg:flex justify-between items-center">
         <div class="col-span-2">
            <div class="space-y-10 mb-6 ">
           <Button class="flex gap-2 items-center bg-[#3178c6]">
@@ -26,9 +26,9 @@
           </Button>
         </div>
         </div>
-        <div class="bg-gray-300 p-6 rounded-lg">
+        <div class="bg-gray-300 p-6 rounded-lg w-full lg:w-1/3">
           <div class="space-y-10 mb-6">
-            <h5 class="text-xl text-gray-600">Booking List</h5>
+            <h5 class="text-xl text-gray-600">Confirm Bookings</h5>
             <Button class="flex gap-2 items-center bg-[#3178c6]">
               <Icon icon="si:add-circle-fill" />
               Car Rentals
