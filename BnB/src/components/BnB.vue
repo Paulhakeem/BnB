@@ -32,6 +32,11 @@
         />
       </div>
     </div>
+
+    <div class="flex gap-10 items-center mb-4">
+      <label for="text" class="text-gray-600">Arrival time</label>
+      <input type="time" class="text-[#3178c6]" />
+    </div>
     <a
       class="text-md py-1.5 px-2.5 inline-flex items-center gap-x-1.5 text-gray-800 bg-gray-100 hover:text-[#3178c6] rounded-lg focus:outline-hidden focus:text-[#3178c6]"
       href="#"

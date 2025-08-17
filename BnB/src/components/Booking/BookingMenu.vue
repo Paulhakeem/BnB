@@ -1,9 +1,9 @@
 <template>
   <!-- Small Device -->
-  <div class="bg-[#3178c6] z-50 flex justify-between items-start sticky top-0 w-full">
+  <div class="bg-[#3178c6] z-50 flex justify-between items-start sticky top-0">
     <div v-for="(item, index) in icon" :key="index">
       <div
-        class="flex lg:hidden z-50 items-center justify-between p-4"
+        class="lg:hidden z-50 items-center p-4"
       >
         <Icon :icon="item.icon" class="cursor-pointer text-3xl text-gray-200" />
       </div>
