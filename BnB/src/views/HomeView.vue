@@ -1,26 +1,11 @@
 <template>
   <main class="select-none">
-    <div class="">
-      <video
-        autoplay
-        preload="none"
-        loop
-        muted
-        id="video"
-        class="z-[-1] min-w-full max-h-screen absolute top-0 left-0 buttom-0 right-0 object-cover bg-no-repeat"
-      >
-        <source src="../assets/video/bnb.mp4" type="video/mp4" />
-      </video>
+    <div>
+      <Sidebar />
     </div>
-   
-<div>
-   <Sidebar />
-</div>
-
-
     <HomePage />
 
-    <div id="head2" >
+    <div>
       <div class="pb-8">
         <h5
           class="text-2xl text-[#3178c6] lg:text-white text-md font-medium capitalize lg:hidden"
@@ -34,7 +19,7 @@
       >
         <div data-aos="fade-up" data-aos-duration="1000">
           <div>
-            <img 
+            <img
               src="../assets/images/dispencer.jpg"
               alt=""
               loading="lazy"
@@ -72,7 +57,11 @@
             />
           </div>
 
-          <div class="relative max-w-xl mx-auto mt-20" data-aos="fade-up" data-aos-duration="1000">
+          <div
+            class="relative max-w-xl mx-auto mt-20"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <img
               class="w-64 h-[8em] object-cover rounded-tr-xl"
               src="../assets/images/kitchen.jpg"
@@ -103,9 +92,7 @@
     </section>
 
     <!--  -->
-    <section
-      class="flex flex-wrap justify-evenly h-auto w-full mt-6"
-    >
+    <section class="flex flex-wrap justify-evenly h-auto w-full mt-6">
       <div data-aos="fade-up" class="text-center p-2">
         <i class="fa-solid fa-envelope text-2xl text-[#3178c6]"></i>
         <p class="font-medium">
@@ -156,7 +143,7 @@ import Contact from "../components/Contact.vue";
     padding-top: 20em;
   }
   #head2 h5 {
-    padding-left: 1em
+    padding-left: 1em;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -168,6 +155,5 @@ import Contact from "../components/Contact.vue";
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
 }
 </style>

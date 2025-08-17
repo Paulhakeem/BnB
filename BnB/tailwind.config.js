@@ -1,18 +1,16 @@
-const animate = require("tailwindcss-animate")
+const animate = require("tailwindcss-animate");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
-  
   content: [
-    './pages/**/*.{js,jsx,vue}',
-    './components/**/*.{js,jsx,vue}',
-    './app/**/*.{js,jsx,vue}',
-    './src/**/*.{js,jsx,vue}',
-	],
-  
+    "./pages/**/*.{js,jsx,vue}",
+    "./components/**/*.{js,jsx,vue}",
+    "./app/**/*.{js,jsx,vue}",
+    "./src/**/*.{js,jsx,vue}",
+  ],
   theme: {
     container: {
       center: true,
@@ -64,6 +62,10 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        fade: {
+          "0%, 100%": { opacity: "0" },
+          "10%, 90%": { opacity: "1" },
+        },
         "accordion-down": {
           from: { height: 0 },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -74,14 +76,15 @@ module.exports = {
         },
         "collapsible-down": {
           from: { height: 0 },
-          to: { height: 'var(--radix-collapsible-content-height)' },
+          to: { height: "var(--radix-collapsible-content-height)" },
         },
         "collapsible-up": {
-          from: { height: 'var(--radix-collapsible-content-height)' },
+          from: { height: "var(--radix-collapsible-content-height)" },
           to: { height: 0 },
         },
       },
       animation: {
+        fade: "fade 15s infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "collapsible-down": "collapsible-down 0.2s ease-in-out",
@@ -90,4 +93,4 @@ module.exports = {
     },
   },
   plugins: [animate],
-}
+};
