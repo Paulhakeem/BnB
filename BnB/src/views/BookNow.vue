@@ -1,7 +1,7 @@
 <template>
   <main>
     <Sidebar />
-    <div class="grid items-start lg:flex">
+    <div class="items-start lg:flex">
       <sidebar />
 
       <div class="p-8 w-full container">
@@ -10,7 +10,7 @@
           Please select your booking options below.
         </p>
 
-        <div class="flex-wrap lg:flex justify-between items-center">
+        <div class="flex-wrap lg:flex justify-between place-content-center items-center">
           <div class="col-span-2">
             <div class="space-y-10 mb-6">
               <Button class="flex gap-2 items-center bg-[#3178c6]">
