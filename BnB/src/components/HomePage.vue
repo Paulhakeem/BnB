@@ -37,7 +37,8 @@ onMounted(() => {
           >
         </h2>
       </div>
-        <RouterLink to="/book-now" class="text-center justify-center">
+       <div class="flex items-center justify-center gap-10">
+         <RouterLink to="/book-now" class="text-center justify-center">
           <button
             class="my-6 font-sans font-bold uppercase text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-[#3178c6] to-gray text-white text-center"
           >
@@ -45,6 +46,15 @@ onMounted(() => {
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </RouterLink>
+         <RouterLink to="/" class="text-center justify-center">
+          <button
+            class="my-6 font-sans font-bold uppercase text-xs py-3 px-6 rounded-lg bg-gradient-to-tr from-[#3178c6] to-gray text-white text-center"
+          >
+           Sign-up
+            <i class="fa-solid fa-right-to-bracket"></i>
+          </button>
+        </RouterLink>
+       </div>
     </main>
   </div>
 </template>

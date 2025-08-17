@@ -6,7 +6,7 @@
     <HomePage />
 
     <div>
-      <div class="pb-8">
+      <div class="pt-8 pb-2">
         <h5
           class="text-2xl text-[#3178c6] lg:text-white text-md font-medium capitalize lg:hidden"
         >
