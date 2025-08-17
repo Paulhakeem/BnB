@@ -8,13 +8,12 @@
     <div>
       <div class="pt-8 pb-2">
         <h5
-          class="text-2xl text-[#3178c6] lg:text-white text-md font-medium capitalize lg:hidden"
+          class="pl-4 text-2xl text-[#3178c6] lg:text-white text-md font-medium capitalize lg:hidden"
         >
           one Bedroom Apartment
         </h5>
       </div>
       <div
-        id="images"
         class="flex flex-col md:flex-row gap-3 justify-center items-center"
       >
         <div data-aos="fade-up" data-aos-duration="1000">
@@ -23,7 +22,7 @@
               src="../assets/images/dispencer.jpg"
               alt=""
               loading="lazy"
-              class="w-[40em] h-[17em] object-cover rounded-tl-xl rounded-bl-xl"
+              class="w-[22em] h-[17em] lg:w-[40em] lg:h-[17em] object-cover rounded-tl-xl rounded-bl-xl"
             />
           </div>
         </div>
@@ -127,33 +126,3 @@ import Footer from "../components/Footer.vue";
 import Contact from "../components/Contact.vue";
 </script>
 
-<style>
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #head2 {
-    padding-top: 20em;
-
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  #head2 {
-    padding-top: 20em;
-  }
-  #head2 h5 {
-    padding-left: 1em;
-  }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  #head2 {
-    padding-top: 14em;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
-</style>
