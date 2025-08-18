@@ -38,7 +38,7 @@
         <label for="text" class="text-gray-600">Arrival time</label>
         <input
           type="time"
-          class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none"
+          class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none w-24 lg:w-32"
         />
       </div>
     </div>
