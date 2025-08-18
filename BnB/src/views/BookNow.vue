@@ -6,26 +6,26 @@
 
       <div class="p-8 w-full container">
         <h1 class="text-2xl font-medium mb-4 text-[#3178c6]">Book Now🤗</h1>
-        <p class="text-gray-600 mb-6">
+        <p class="text-gray-600">
           Please select your booking options below.
         </p>
 
-        <div class="flex-wrap lg:flex justify-between place-content-center items-center">
+        <div class="flex-wrap lg:flex justify-between place-content-center pt-10">
           <div class="col-span-2">
             <div class="space-y-10 mb-6">
-              <Button class="flex gap-2 items-center bg-[#3178c6]">
+              <Button @click="toggleBnB" class="flex gap-2 items-center bg-[#3178c6]">
                 <Icon icon="si:add-circle-fill" />
                 BnB</Button
               >
               <!-- section -->
-              <BnB />
+              <BnB v-if="isBnBOpen" />
               <!--section  -->
-              <Button class="flex gap-2 items-center bg-[#3178c6]">
+              <Button @click="toggleTour" class="flex gap-2 items-center bg-[#3178c6]">
                 <Icon icon="si:add-circle-fill" />
                 Tour and Safaris
               </Button>
               <!--section  -->
-              <Tabs />
+              <Tabs v-if="isTourOpen"/>
               <!--section  -->
             </div>
           </div>
@@ -75,10 +75,21 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
 import { Button } from "@/components/ui/button";
 import Sidebar from "../components/Sidebar.vue";
 import sidebar from "../components/Booking/BookingMenu.vue";
 import BnB from "../components/BnB.vue";
 import Tabs from "../components/Tours/tabs.vue";
 import { Icon } from "@iconify/vue";
+
+const isBnBOpen = ref(false);
+const toggleBnB = () => {
+  isBnBOpen.value = !isBnBOpen.value;
+};
+
+const isTourOpen = ref(false);
+const toggleTour = () => {
+  isTourOpen.value = !isTourOpen.value;
+};
 </script>
