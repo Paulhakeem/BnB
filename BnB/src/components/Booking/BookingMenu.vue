@@ -38,5 +38,6 @@ const icon = ref([
   { icon: "material-symbols:home-outline" },
   { icon: "mdi:graph-box-outline" },
   { icon: "mdi:bell-outline" },
+  { icon: "mdi:account-outline" },
 ]);
 </script>
