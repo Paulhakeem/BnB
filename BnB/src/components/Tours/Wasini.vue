@@ -22,16 +22,27 @@
             id="text"
             name="text"
             placeholder="Enter pick-up location"
-            class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none"
+            class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none w-44"
           />
         </div>
+  
         <div class="flex flex-col mb-4">
           <label for="text" class="text-gray-600">Pick-ups time</label>
           <input
             type="time"
             name="time"
             placeholder="Enter drop-off location"
-            class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none"
+            class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none "
+          />
+        </div>
+          <div class="flex flex-col mb-4">
+          <label for="text" class="text-gray-600">Drop-Offs</label>
+          <input
+            type="text"
+            id="text"
+            name="text"
+            placeholder="Enter drop-off location"
+            class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none w-44"
           />
         </div>
         <div class="flex flex-col mb-4">

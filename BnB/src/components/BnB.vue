@@ -7,7 +7,7 @@
           type="date"
           id="text"
           name="text"
-          class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none"
+          class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none w-32"
         />
       </div>
       <div class="flex flex-col mb-4">
@@ -16,7 +16,7 @@
           type="date"
           id="text"
           name="text"
-          class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none"
+          class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none w-32"
         />
       </div>
     </div>
