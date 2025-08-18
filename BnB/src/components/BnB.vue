@@ -34,7 +34,7 @@
         />
       </div>
 
-      <div class="flex gap-10 items-center mb-4">
+      <div class="flex gap-4 items-center mb-4">
         <label for="text" class="text-gray-600">Arrival time</label>
         <input
           type="time"
