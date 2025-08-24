@@ -1,5 +1,10 @@
-<script setup></script>
+<script setup>
+import Whatsapp from './components/Whatsapp.vue';
+</script>
 
 <template>
-  <RouterView />
+  <main>
+    <Whatsapp />
+    <RouterView />
+  </main>
 </template>
