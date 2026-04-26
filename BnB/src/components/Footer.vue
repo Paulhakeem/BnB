@@ -87,6 +87,7 @@
               class="w-10 h-10 bg-yellow-400 text-[#0f3460] rounded-full flex items-center justify-center hover:bg-white transition-all transform hover:scale-110"
             >
               <i class="fa-brands fa-instagram"></i>
+  
             </a>
             <a
               href="#"
