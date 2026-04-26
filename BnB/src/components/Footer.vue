@@ -61,7 +61,7 @@
             </li>
             <li class="flex items-center gap-2">
               <i class="fa-solid fa-phone text-yellow-400"></i>
-              <span>+254 700 000 000</span>
+              <span>+254 769 716705</span>
             </li>
           </ul>
         </div>
