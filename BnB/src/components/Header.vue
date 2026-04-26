@@ -2,41 +2,52 @@
   <header>
     <nav
       id="nav"
-      class="bg-white lg:px-6 py-2.5 dark:bg-gray-800 sm:w-full md:w-full"
+      class="bg-gradient-to-r from-[#3178c6] to-[#1e5aa0] lg:px-6 py-3 shadow-lg sticky top-0 z-50 backdrop-blur-md bg-opacity-95"
     >
       <div
-        class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 lg:px-0"
       >
-        <a class="flex items-center">
+        <a
+          href="/"
+          class="flex items-center hover:scale-110 transition-transform duration-300"
+        >
           <img
             src="../assets/logo/logo1.jpg"
-            class="logo w-14"
+            class="logo w-14 rounded-full shadow-md hover:shadow-lg transition-shadow"
             alt="my holidays"
           />
-        </a>
-        <div class="flex items-center lg:order-2">
-          <a
-            href="#"
-            class="text-primary-50 bg-[#3178c6] text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
-            >Sign Up</a
+          <span class="ml-3 text-xl font-bold text-white hidden sm:inline"
+            >My Holiday Deals</span
           >
+        </a>
+        <div class="flex items-center lg:order-2 gap-4">
+          <button
+            class="hidden sm:inline-block bg-white text-[#3178c6] font-bold text-sm px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1"
+          >
+            Sign Up
+          </button>
+          <button
+            class="text-white lg:hidden text-2xl hover:text-yellow-300 transition-colors"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
-        <div v-bind="menu"
+        <div
           class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
           id="mobile-menu-2"
         >
-          <ul v-for="(tab, index) in menuText" :key="index"
-            class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+          <ul
+            v-for="(tab, index) in menuText"
+            :key="index"
+            class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-1 lg:mt-0"
           >
-            <li class="block py-2 pr-4 pl-3 text-gray-700 gap-10 dark:text-white hover:text-blue-400">
-              <RouterLink
-                :to="tab.link"
-                aria-current="page"
-              >
+            <li
+              class="block py-2 pr-4 pl-3 text-white hover:text-yellow-300 transition-all duration-300 hover:bg-white hover:bg-opacity-10 rounded-lg"
+            >
+              <RouterLink :to="tab.link" aria-current="page">
                 {{ tab.text }}
               </RouterLink>
             </li>
-       
           </ul>
         </div>
       </div>
@@ -51,6 +62,7 @@ const menuText = ref([
   { text: "About", link: "#" },
   { text: "Tours and Safaris", link: "/tour" },
   { text: "Contact Us", link: "#" },
-])
+]);
 </script>
 
+<style scoped></style>

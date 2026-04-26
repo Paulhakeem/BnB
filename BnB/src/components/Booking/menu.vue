@@ -28,7 +28,7 @@ const items = ref([
   },
   {
     name: "Bookings",
-    path: "/Bookings",
+    path: "/bookings",
     icon: "fluent:book-add-24-filled",
   },
   {

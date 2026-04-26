@@ -1,55 +1,86 @@
 <template>
   <section>
-    <div class="mt-12 p-6 flex flex-wrap justify-evenly gap-12">
+    <div class="mt-12 p-6 md:p-12 flex flex-wrap justify-evenly gap-12">
       <div class="">
-        <h4 data-aos="fade-up" class="text-[#3178c6] text-xl font-semibold">
-          What this place offers
+        <h4
+          data-aos="fade-up"
+          class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#667eea] to-[#764ba2] bg-clip-text text-transparent mb-2"
+        >
+          ✨ What This Place Offers
         </h4>
-        <button data-aos="fade-up"
+        <p class="text-gray-600 text-sm mb-6">
+          Everything you need for a perfect stay
+        </p>
+        <button
+          data-aos="fade-up"
           @click="toggleModal"
-          class="inline-flex items-center px-4 py-2 bg-[#3178c6] mt-12 text-white text-sm font-medium capitalize rounded-md"
+          class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white text-sm font-bold capitalize rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300 mt-6"
         >
           <i class="fa-solid fa-circle-info pr-2"></i>
-          show all 41 amenities
+          Show All 41 Amenities
         </button>
       </div>
 
       <div
-        class="grid grid-cols-2 max-w-md gap-6 item place-content-center justify-center flex-wrap"
+        class="grid grid-cols-1 md:grid-cols-2 max-w-2xl gap-6 item place-content-center justify-center flex-wrap"
       >
-        <div data-aos="fade-up" class="flex gap-3 items-center">
-          <i class="fa-solid fa-binoculars text-blue"></i>
-          <p>City skyline view</p>
+        <div
+          data-aos="fade-up"
+          class="flex gap-4 items-center p-4 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl hover:shadow-lg transition-all duration-300 border-l-4 border-[#667eea]"
+        >
+          <i class="fa-solid fa-binoculars text-2xl text-[#667eea]"></i>
+          <p class="font-medium text-gray-700">City Skyline View</p>
         </div>
-        <div data-aos="fade-up" class="flex gap-3 items-center">
-          <i class="fa-solid fa-umbrella-beach text-blue"></i>
-          <p>Shared beach access</p>
+        <div
+          data-aos="fade-up"
+          class="flex gap-4 items-center p-4 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl hover:shadow-lg transition-all duration-300 border-l-4 border-[#ff6b6b]"
+        >
+          <i class="fa-solid fa-umbrella-beach text-2xl text-[#ff6b6b]"></i>
+          <p class="font-medium text-gray-700">Shared Beach Access</p>
         </div>
-        <div data-aos="fade-up" class="flex gap-3 items-center">
-          <i class="fa-solid fa-briefcase text-blue"></i>
-          <p>Dedicated workspace</p>
+        <div
+          data-aos="fade-up"
+          class="flex gap-4 items-center p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl hover:shadow-lg transition-all duration-300 border-l-4 border-[#26de81]"
+        >
+          <i class="fa-solid fa-briefcase text-2xl text-[#26de81]"></i>
+          <p class="font-medium text-gray-700">Dedicated Workspace</p>
         </div>
 
-        <div data-aos="fade-up" class="flex gap-3 items-center">
-          <i class="fa-solid fa-car text-blue"></i>
-          <p>Free parking on premises</p>
+        <div
+          data-aos="fade-up"
+          class="flex gap-4 items-center p-4 bg-gradient-to-br from-red-50 to-pink-50 rounded-xl hover:shadow-lg transition-all duration-300 border-l-4 border-[#ee5a6f]"
+        >
+          <i class="fa-solid fa-car text-2xl text-[#ee5a6f]"></i>
+          <p class="font-medium text-gray-700">Free Parking</p>
         </div>
 
-        <div data-aos="fade-up" class="flex gap-3 items-center">
-          <i class="fa-solid fa-fan text-blue"></i>
-          <p>Garden view</p>
+        <div
+          data-aos="fade-up"
+          class="flex gap-4 items-center p-4 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl hover:shadow-lg transition-all duration-300 border-l-4 border-[#1fb7eb]"
+        >
+          <i class="fa-solid fa-fan text-2xl text-[#1fb7eb]"></i>
+          <p class="font-medium text-gray-700">Garden View</p>
         </div>
-        <div data-aos="fade-up" class="flex gap-3 items-center">
-          <i class="fa-solid fa-kitchen-set text-blue"></i>
-          <p>Kitchen</p>
+        <div
+          data-aos="fade-up"
+          class="flex gap-4 items-center p-4 bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl hover:shadow-lg transition-all duration-300 border-l-4 border-[#ffa502]"
+        >
+          <i class="fa-solid fa-kitchen-set text-2xl text-[#ffa502]"></i>
+          <p class="font-medium text-gray-700">Kitchen</p>
         </div>
-        <div data-aos="fade-up" class="flex gap-3 items-center">
-          <i class="fa-solid fa-wifi text-blue"></i>
-          <p>Wifi</p>
+        <div
+          data-aos="fade-up"
+          class="flex gap-4 items-center p-4 bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl hover:shadow-lg transition-all duration-300 border-l-4 border-[#764ba2]"
+        >
+          <i class="fa-solid fa-wifi text-2xl text-[#764ba2]"></i>
+          <p class="font-medium text-gray-700">High-Speed WiFi</p>
         </div>
-        <div data-aos="fade-up" class="flex gap-3 items-center">
-          <i class="fa-solid fa-paw text-blue"></i>
-          <p>Pets allowed</p>
+        <div
+          data-aos="fade-up"
+          class="flex gap-4 items-center p-4 bg-gradient-to-br from-orange-50 to-rose-50 rounded-xl hover:shadow-lg transition-all duration-300 border-l-4 border-[#ff6348]"
+        >
+          <i class="fa-solid fa-paw text-2xl text-[#ff6348]"></i>
+          <p class="font-medium text-gray-700">Pets Allowed</p>
         </div>
       </div>
     </div>
@@ -150,7 +181,7 @@
             <i class="fa-solid fa-jug-detergent text-xl"></i>
             <p>Clothing storage: wardrobe</p>
           </div>
-        </div> 
+        </div>
       </ScrollArea>
     </AmenitiesModal>
   </section>

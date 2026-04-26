@@ -1,54 +1,72 @@
 <template>
-  <form class="">
-    <div class="flex gap-10 items-center">
-      <div class="flex flex-col mb-4">
-        <label for="text" class="text-gray-600">From</label>
+  <form
+    class="bg-gradient-to-br from-white to-gray-50 p-6 rounded-2xl shadow-lg border-2 border-gray-100 hover:shadow-xl transition-all duration-300"
+  >
+    <h3
+      class="text-2xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-[#667eea] to-[#764ba2] bg-clip-text text-transparent"
+    >
+      📅 Book Your Stay
+    </h3>
+    <div class="flex flex-col lg:flex-row gap-6 items-start lg:items-end">
+      <div class="flex flex-col">
+        <label for="from-date" class="text-gray-700 font-semibold mb-2"
+          >Check-In</label
+        >
         <input
           type="date"
-          id="text"
-          name="text"
-          class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none w-32"
+          id="from-date"
+          name="from-date"
+          class="cursor-pointer text-[#667eea] border-2 border-gray-300 rounded-lg p-3 outline-none w-40 hover:border-[#667eea] focus:border-[#667eea] focus:ring-2 focus:ring-purple-200 transition-all"
         />
       </div>
-      <div class="flex flex-col mb-4">
-        <label for="text" class="text-gray-600">To</label>
+      <div class="flex flex-col">
+        <label for="to-date" class="text-gray-700 font-semibold mb-2"
+          >Check-Out</label
+        >
         <input
           type="date"
-          id="text"
-          name="text"
-          class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none w-32"
+          id="to-date"
+          name="to-date"
+          class="cursor-pointer text-[#667eea] border-2 border-gray-300 rounded-lg p-3 outline-none w-40 hover:border-[#667eea] focus:border-[#667eea] focus:ring-2 focus:ring-purple-200 transition-all"
         />
       </div>
     </div>
-    <div class="flex gap-10 items-center mb-4">
-      <div class="flex flex-col mb-4">
-        <label for="text" class="text-gray-600">Guests</label>
+    <div class="flex flex-col lg:flex-row gap-6 items-start lg:items-end mt-6">
+      <div class="flex flex-col">
+        <label for="guests" class="text-gray-700 font-semibold mb-2"
+          >👥 Guests</label
+        >
         <input
           type="number"
-          id="text"
-          name="text"
+          id="guests"
+          name="guests"
           min="1"
           max="10"
           placeholder="1"
-          class="outline-none border border-gray-[#3178c6] rounded-md p-1.5"
+          class="outline-none border-2 border-gray-300 rounded-lg p-3 w-40 hover:border-[#667eea] focus:border-[#667eea] focus:ring-2 focus:ring-purple-200 transition-all"
         />
       </div>
 
-      <div class="flex gap-4 items-center mb-4">
-        <label for="text" class="text-gray-600">Arrival time</label>
+      <div class="flex flex-col">
+        <label for="arrival-time" class="text-gray-700 font-semibold mb-2"
+          >🕐 Arrival Time</label
+        >
         <input
           type="time"
-          class="cursor-pointer text-[#3178c6] border border-gray-300 rounded-md p-1.5 outline-none w-28 lg:w-32"
+          id="arrival-time"
+          class="cursor-pointer text-[#667eea] border-2 border-gray-300 rounded-lg p-3 outline-none w-40 hover:border-[#667eea] focus:border-[#667eea] focus:ring-2 focus:ring-purple-200 transition-all"
         />
       </div>
     </div>
-    <a
-      class="text-md py-1.5 px-2.5 inline-flex items-center gap-x-1.5 text-gray-800 bg-gray-100 hover:text-[#3178c6] rounded-lg focus:outline-hidden focus:text-[#3178c6]"
-      href="#"
-    >
-      <Icon icon="mdi:check-bold" class="text-lg" />
-      Submit
-    </a>
+    <div class="mt-6">
+      <button
+        type="button"
+        class="text-lg py-3 px-8 inline-flex items-center gap-2 text-white bg-gradient-to-r from-[#667eea] via-[#764ba2] to-[#f093fb] rounded-full font-bold hover:shadow-lg hover:scale-110 transform transition-all duration-300 focus:outline-hidden"
+      >
+        <Icon icon="mdi:check-bold" class="text-xl" />
+        Reserve Now
+      </button>
+    </div>
   </form>
 </template>
 

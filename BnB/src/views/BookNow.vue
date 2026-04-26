@@ -2,30 +2,36 @@
   <main>
     <Sidebar />
     <div class="items-start lg:flex">
-      <sidebar />
+      <BookingMenu />
 
       <div class="p-8 w-full container">
         <h1 class="text-2xl font-medium mb-4 text-[#3178c6]">Book Now🤗</h1>
-        <p class="text-gray-600">
-          Please select your booking options below.
-        </p>
+        <p class="text-gray-600">Please select your booking options below.</p>
 
-        <div class="flex-wrap lg:flex justify-between place-content-center pt-10">
+        <div
+          class="flex-wrap lg:flex justify-between place-content-center pt-10"
+        >
           <div class="col-span-2">
             <div class="space-y-10 mb-6">
-              <Button @click="toggleBnB" class="flex gap-2 items-center bg-[#3178c6]">
+              <Button
+                @click="toggleBnB"
+                class="flex gap-2 items-center bg-[#3178c6]"
+              >
                 <Icon icon="si:add-circle-fill" />
                 BnB</Button
               >
               <!-- section -->
               <BnB v-if="isBnBOpen" />
               <!--section  -->
-              <Button @click="toggleTour" class="flex gap-2 items-center bg-[#3178c6]">
+              <Button
+                @click="toggleTour"
+                class="flex gap-2 items-center bg-[#3178c6]"
+              >
                 <Icon icon="si:add-circle-fill" />
                 Tour and Safaris
               </Button>
               <!--section  -->
-              <Tabs v-if="isTourOpen"/>
+              <Tabs v-if="isTourOpen" />
               <!--section  -->
             </div>
           </div>
@@ -57,8 +63,12 @@
               <section class="space-y-4">
                 <h6 class="text-md text-[#3178c6] font-semibold">Total</h6>
                 <div class="flex justify-between items-center">
-                  <p class="text-gray-600"><span class="text-sm pr-2">BnB:</span> $200</p>
-                  <p class="text-gray-600"><span class="text-sm pr-2">Tour:</span> $150</p>
+                  <p class="text-gray-600">
+                    <span class="text-sm pr-2">BnB:</span> $200
+                  </p>
+                  <p class="text-gray-600">
+                    <span class="text-sm pr-2">Tour:</span> $150
+                  </p>
                 </div>
                 <p class="text-gray-600 font-bold">Total: $350</p>
               </section>
@@ -78,7 +88,7 @@
 import { ref } from "vue";
 import { Button } from "@/components/ui/button";
 import Sidebar from "../components/Sidebar.vue";
-import sidebar from "../components/Booking/BookingMenu.vue";
+import BookingMenu from "../components/Booking/BookingMenu.vue";
 import BnB from "../components/BnB.vue";
 import Tabs from "../components/Tours/tabs.vue";
 import { Icon } from "@iconify/vue";

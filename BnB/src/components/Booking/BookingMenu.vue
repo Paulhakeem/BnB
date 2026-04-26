@@ -2,9 +2,7 @@
   <!-- Small Device -->
   <div class="bg-[#3178c6] z-50 flex justify-between items-start sticky top-0">
     <div v-for="(item, index) in icon" :key="index">
-      <div
-        class="lg:hidden z-50 items-center p-4"
-      >
+      <div class="lg:hidden z-50 items-center p-4">
         <Icon :icon="item.icon" class="cursor-pointer text-3xl text-gray-200" />
       </div>
     </div>
@@ -27,12 +25,6 @@
 import { Icon } from "@iconify/vue";
 import { ref } from "vue";
 import Menu from "./menu.vue";
-
-const open = ref(false);
-
-const openCloseSidebar = () => {
-  open.value = !open.value;
-};
 
 const icon = ref([
   { icon: "material-symbols:home-outline" },
